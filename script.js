@@ -5,7 +5,7 @@ let randomNumber = 0
 let userGuess = 0
 
 function randomizer () {
-  // Store number typed in by user and convert it to an integer 
+  // Store number typed in by user and convert it to an integer
   userGuess = document.getElementById('input').value
   userGuess = parseInt(userGuess)
 
@@ -13,8 +13,8 @@ function randomizer () {
   randomNumber = (Math.random() * 6) + 1
   randomNumber = parseInt(randomNumber)
 
-  //compare user's guess with random number
-  if (userGuess == randomNumber) {
-      document.getElementById('answer').innerHTML = 'Congrats!!!'
+  // Compare user's guess with random number
+  if (userGuess === randomNumber) {
+    document.getElementById('answer').innerHTML = 'Congrats!!!'
   }
 }
